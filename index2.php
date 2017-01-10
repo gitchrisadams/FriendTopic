@@ -44,31 +44,34 @@
 <div class="TenPxPaddingDiv jumbotron">
 <h1>Topics</h1>
 
-
+<table>
 <?php 
   while($row = mysqli_fetch_array($data)){
     
     // If user is logged in, display link:
     if(isset($_SESSION['user_id'])){
   ?>
-
+    <tr>
+      <td>
         <?php echo $row['name']; ?>
-
+      </td>
+      <td>
         <?php 
-          echo '<a href="viewtopics.php?topic_id=' . $row['topic_id'] . '&name=' . $row['name'] . '">' . "(" .  $row['COUNT(*)'] . ")" . "</a><br>";  
+          echo '<a href="viewtopics.php?topic_id=' . $row['topic_id'] . '&name=' . $row['name'] . '">' . "(" .  $row['COUNT(*)'] . ")" . "</a>";  
         ?>
-
+      </td></tr>
   <?php
     }
       // If user is not logged in, just display topic w/ no link:
       else{
   ?>
-  <?php echo $row['name']; ?></td><td><?php echo "(" . $row["COUNT(*)"] . ")" . "<br>"; ?>
+    <tr><td><?php echo $row['name']; ?></td><td><?php echo "(" . $row["COUNT(*)"] . ")"; ?></td></tr>
 
     <?php
       }
   }
     ?>
+</table>
 </div>
 <?php
   mysqli_close($dbc);

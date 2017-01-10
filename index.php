@@ -41,7 +41,7 @@
   $data = mysqli_query($dbc, $query);
 
 ?>
-<div class="TenPxPaddingDiv">
+<div class="TenPxPaddingDiv jumbotron">
 <h1>Topics</h1>
 
 <table>
