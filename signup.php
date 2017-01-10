@@ -60,7 +60,7 @@ $dbc = db_connect();
       <label for="password2">Password (retype):</label>
       <input type="password" id="password2" name="password2" /><br />
     </fieldset>
-    <input type="submit" value="Sign Up" name="submit" />
+    <button class="btn btn-primary" type="submit" value="Sign Up" name="submit"><i class="fa fa-user-plus" aria-hidden="true"> Sign Up</i></button>
   </form>
 </div>
 <?php

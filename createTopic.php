@@ -70,7 +70,7 @@
       <input type="text" id="topicName" name="topicName" value="<?php if (!empty($topicName)) echo $topicName; ?>" /><br />
       
     </fieldset>
-    <input class="btn" type="submit" value="Submit Topic" name="submit" />
+    <input class="btn btn-primary" type="submit" value="Submit Topic" name="submit" />
   </form>
 </div>
 

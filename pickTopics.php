@@ -118,7 +118,7 @@ if (isset($_POST['submit'])){
 <div class="TenPxPaddingDiv">
 <form enctype="multipart/form-data" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
   <fieldset>
-    <legend>Pick Topics</legend>
+    <legend><i class="fa fa-check-square" aria-hidden="true"> Pick Topics</i></legend>
 
 <?php
   // Loop Topics and display them with checkboxes:
@@ -151,7 +151,9 @@ if (isset($_POST['submit'])){
 
   mysqli_close($dbc);
 ?>
-  <input class="btn" type="submit" name="submit" value="Pick Topics"  />
+
+
+  <button class="btn btn-primary" type="submit" name="submit" value="Pick Topics" ><i class="fa fa-check-square" aria-hidden="true"> Pick Topics</i></button>
     </fieldset>
   </form>
 </div>

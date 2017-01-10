@@ -88,7 +88,9 @@
       <label for="password">Password:</label>
       <input type="password" name="password" />
     </fieldset>
-    <input type="submit" value="Log In" name="submit" />
+
+
+    <button class="btn btn-primary" type="submit" value="Log In" name="submit"><i class="fa fa-sign-in" aria-hidden="true"> Log In</i></button>
   </form>
 
 <?php

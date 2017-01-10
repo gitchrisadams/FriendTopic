@@ -145,7 +145,7 @@
       } ?>
     </fieldset>
     <br>
-    <input class="btn" type="submit" value="Save Profile" name="submit" />
+    <input class="btn btn-primary" type="submit" value="Save Profile" name="submit" />
   </form>
 </div>
 <?php
