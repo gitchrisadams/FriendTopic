@@ -42,12 +42,14 @@
         mysqli_query($dbc, $query);
 
         // Confirm success with the user
+        echo '<div class="TenPxPaddingDiv">';
         echo '<h2>Your Topic ' . $topicName . ' has been added.</h2>';
         echo '<br><br> Visit <a href="pickTopics.php">pick topics</a> to select your topics.';
         echo '<br><br>or<br><br>';
         echo '<a href="createTopic.php">Create more topics</a>';
         echo '<br><br>or<br><br>';
         echo '<a href="index.php">Home</a>';
+        echo '</div>';
         mysqli_close($dbc);
         exit();
         }else {
@@ -68,7 +70,7 @@
       <input type="text" id="topicName" name="topicName" value="<?php if (!empty($topicName)) echo $topicName; ?>" /><br />
       
     </fieldset>
-    <input type="submit" value="Submit Topic" name="submit" />
+    <input class="btn" type="submit" value="Submit Topic" name="submit" />
   </form>
 </div>
 

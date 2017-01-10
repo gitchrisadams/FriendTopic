@@ -138,14 +138,14 @@
       <input type="text" id="state" name="state" value="<?php if (!empty($state)) echo $state; ?>" /><br />
       <input type="hidden" name="old_picture" value="<?php if (!empty($old_picture)) echo $old_picture; ?>" />
       <label for="new_picture">Picture:</label>
-      <input type="file" id="new_picture" name="new_picture" />
+      <input type="file" id="exampleInputFile" name="new_picture" />
       <br>
       <?php if (!empty($old_picture)) {
         echo '<img class="profile" src="' . MM_UPLOADPATH . $old_picture . '" alt="Profile Picture" />';
       } ?>
     </fieldset>
     <br>
-    <input type="submit" value="Save Profile" name="submit" />
+    <input class="btn" type="submit" value="Save Profile" name="submit" />
   </form>
 </div>
 <?php

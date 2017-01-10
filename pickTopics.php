@@ -85,12 +85,14 @@ if (isset($_POST['submit'])){
     mysqli_query($dbc, $queryEmpty);
 
     // Confirm success with the user
+    echo '<div class="TenPxPaddingDiv">';
     echo '<h2>Your Topics have been selected.</h2>';
     echo '<br><br> Visit <a href="pickTopics.php">pick topics</a> to select more topics.';
     echo '<br><br>or<br><br>';
     echo '<a href="createTopic.php">Create more topics</a>';
     echo '<br><br>or<br><br>';
     echo '<a href="index.php">Home</a><br>';
+    echo '</div>';
 
     // Loop through all the POST data:  
     foreach ($_POST as $key => $value) {
@@ -149,7 +151,7 @@ if (isset($_POST['submit'])){
 
   mysqli_close($dbc);
 ?>
-  <input type="submit" name="submit" value="Pick Topics"  />
+  <input class="btn" type="submit" name="submit" value="Pick Topics"  />
     </fieldset>
   </form>
 </div>
